@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function getRandomColor() { 
+            return (Math.floor(Math.random() * (350 - 50 )) + 10);
+        }
+        
+        function getColor() {
+          return `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+        }
+        
+        (function changeColor(){
+            setInterval((() => document.body.style.background = getColor()), 
+                1000);
+        })()  
+      
+       
+</script>
+<style>
+    h2 {
+        font-size: 50px;
+        padding-left: 24%;
+        padding-top: 25%;
+        justify-content: center;
+    }
+    footer{
+        font-size: 30px;
+        padding-left: 27%;
+    }
+    footer a{
+        text-decoration: none;
+      color: azure;
+    }
+    footer button{
+ color: black;
+ border-radius: 2px;
+ box-shadow: seashell;
+    }
+</style>
+    <title>DISCO COLOR </title>
+</head>
+<body>
+    <h2>this is simple website which changes its color in every 1 second ,LETS DISCO</h2>
+    <footer>copyright &copy; All Rights Reserved <a href ="">Developer BOY</a> <button style="font-size:24px">FORK ON GITHUB <i class="fa fa-github"></i></button></footer>
+    
+</body>
+</html>
